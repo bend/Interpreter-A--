@@ -1,0 +1,49 @@
+debut
+
+#declaration
+continuer = 1;
+choix = 0;
+n = 0;
+i = 0;
+j = 0;
+
+#menu
+ecrire("bonjour, premier programme de test : Somme");
+sauter_ligne;
+ecrire("1 : debut du programme");
+sauter_ligne;
+ecrire("2 : quitter le programme");
+sauter_ligne;
+ecrire("choix : ");
+lire(choix);
+sauter_ligne;
+
+#programme
+si(choix==1)
+	sauter_ligne;
+	ecrire("Calculer la somme de 0 a n :");
+	sauter_ligne;
+	ecrire("n = ");
+	lire(n);
+
+	repeter i = i + j;
+		ecrire("test");
+		j = j + 1;
+	jusqua(j > n);
+
+	ecrire("Somme : ");
+	ecrire(i);
+	ecrire(j);
+	ecrire(n);
+	sauter_ligne;
+	sauter_ligne;
+		
+sinonsi(choix==2)
+	continuer=0;
+	ecrire("Au revoir");
+sinon
+	ecrire("erreur de saisie");
+finsi;
+sauter_ligne;
+
+fin
